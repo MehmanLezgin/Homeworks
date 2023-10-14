@@ -118,22 +118,22 @@ float func21(float x)
 
 float func22(float x)
 {
-	return log(fabs(pow(x, 3) - expx)) / log(5) - root(2*x/cos(x+1.23f* M_PI), 3);
+	return log(fabs(pow(x, 3) - expx)) / log(5) - root(2 * x / cos(x + 1.23f * M_PI), 3);
 }
 
 float func23(float x)
 {
-	return fabs(cos(M_PI/7)-expx) - root(2+sqrt(pow(x,5)), 7) + log10((pow(x,4)+1)/6);
+	return fabs(cos(M_PI / 7) - expx) - root(2 + sqrt(pow(x, 5)), 7) + log10((pow(x, 4) + 1) / 6);
 }
 
 float func24(float x)
 {
-	return log(x*x+2) - pow(sin(x),2) + root(2-sqrt(fabs(x)), 5) + sin(M_PI/expx+1);
+	return log(x * x + 2) - pow(sin(x), 2) + root(2 - sqrt(fabs(x)), 5) + sin(M_PI / expx + 1);
 }
 
 float func25(float x)
 {
-	return log2f(expx)-cos(x/ M_PI)+root(fabs(tan(2*x))/2.6f+x*x+pow(x,3), 3);
+	return log2f(expx) - cos(x / M_PI) + root(fabs(tan(2 * x)) / 2.6f + x * x + pow(x, 3), 3);
 }
 
 int main()
@@ -170,4 +170,5 @@ int main()
 	{
 		printf("%d) y = %.4f\n", i + 1, simple_functions[i](x));
 	}
+	return 0;
 }
